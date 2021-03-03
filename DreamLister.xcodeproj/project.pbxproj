@@ -16,6 +16,14 @@
 		DD9DB44125EF3668003440D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DB43F25EF3668003440D6 /* LaunchScreen.storyboard */; };
 		DD9DB44C25EF3668003440D6 /* DreamListerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB44B25EF3668003440D6 /* DreamListerTests.swift */; };
 		DD9DB45725EF3668003440D6 /* DreamListerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB45625EF3668003440D6 /* DreamListerUITests.swift */; };
+		DD9DB46F25EF3C05003440D6 /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB46725EF3C05003440D6 /* ItemType+CoreDataClass.swift */; };
+		DD9DB47025EF3C05003440D6 /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB46825EF3C05003440D6 /* ItemType+CoreDataProperties.swift */; };
+		DD9DB47125EF3C05003440D6 /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB46925EF3C05003440D6 /* Store+CoreDataClass.swift */; };
+		DD9DB47225EF3C05003440D6 /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB46A25EF3C05003440D6 /* Store+CoreDataProperties.swift */; };
+		DD9DB47325EF3C05003440D6 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB46B25EF3C05003440D6 /* Image+CoreDataClass.swift */; };
+		DD9DB47425EF3C05003440D6 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB46C25EF3C05003440D6 /* Image+CoreDataProperties.swift */; };
+		DD9DB47525EF3C05003440D6 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB46D25EF3C05003440D6 /* Item+CoreDataClass.swift */; };
+		DD9DB47625EF3C05003440D6 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB46E25EF3C05003440D6 /* Item+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		DD9DB45225EF3668003440D6 /* DreamListerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamListerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9DB45625EF3668003440D6 /* DreamListerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListerUITests.swift; sourceTree = "<group>"; };
 		DD9DB45825EF3668003440D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9DB46725EF3C05003440D6 /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DD9DB46825EF3C05003440D6 /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD9DB46925EF3C05003440D6 /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DD9DB46A25EF3C05003440D6 /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD9DB46B25EF3C05003440D6 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DD9DB46C25EF3C05003440D6 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DD9DB46D25EF3C05003440D6 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DD9DB46E25EF3C05003440D6 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,7 @@
 		DD9DB43025EF3665003440D6 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				DD9DB47A25EF3C1B003440D6 /* Model */,
 				DD9DB43125EF3665003440D6 /* AppDelegate.swift */,
 				DD9DB43325EF3665003440D6 /* SceneDelegate.swift */,
 				DD9DB43525EF3665003440D6 /* ViewController.swift */,
@@ -129,6 +146,29 @@
 				DD9DB45825EF3668003440D6 /* Info.plist */,
 			);
 			path = DreamListerUITests;
+			sourceTree = "<group>";
+		};
+		DD9DB47A25EF3C1B003440D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD9DB46725EF3C05003440D6 /* ItemType+CoreDataClass.swift */,
+				DD9DB46925EF3C05003440D6 /* Store+CoreDataClass.swift */,
+				DD9DB46B25EF3C05003440D6 /* Image+CoreDataClass.swift */,
+				DD9DB46D25EF3C05003440D6 /* Item+CoreDataClass.swift */,
+				DD9DB47B25EF3C26003440D6 /* Generated */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD9DB47B25EF3C26003440D6 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				DD9DB46825EF3C05003440D6 /* ItemType+CoreDataProperties.swift */,
+				DD9DB46A25EF3C05003440D6 /* Store+CoreDataProperties.swift */,
+				DD9DB46C25EF3C05003440D6 /* Image+CoreDataProperties.swift */,
+				DD9DB46E25EF3C05003440D6 /* Item+CoreDataProperties.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +301,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD9DB47325EF3C05003440D6 /* Image+CoreDataClass.swift in Sources */,
+				DD9DB47425EF3C05003440D6 /* Image+CoreDataProperties.swift in Sources */,
 				DD9DB43C25EF3665003440D6 /* DreamLister.xcdatamodeld in Sources */,
+				DD9DB47225EF3C05003440D6 /* Store+CoreDataProperties.swift in Sources */,
 				DD9DB43625EF3665003440D6 /* ViewController.swift in Sources */,
+				DD9DB47525EF3C05003440D6 /* Item+CoreDataClass.swift in Sources */,
+				DD9DB47625EF3C05003440D6 /* Item+CoreDataProperties.swift in Sources */,
+				DD9DB47025EF3C05003440D6 /* ItemType+CoreDataProperties.swift in Sources */,
+				DD9DB46F25EF3C05003440D6 /* ItemType+CoreDataClass.swift in Sources */,
 				DD9DB43225EF3665003440D6 /* AppDelegate.swift in Sources */,
+				DD9DB47125EF3C05003440D6 /* Store+CoreDataClass.swift in Sources */,
 				DD9DB43425EF3665003440D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
