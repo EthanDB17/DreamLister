@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD5000E525FC66E60070BAC3 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5000E425FC66E60070BAC3 /* MaterialView.swift */; };
 		DD9DB43225EF3665003440D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB43125EF3665003440D6 /* AppDelegate.swift */; };
 		DD9DB43425EF3665003440D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB43325EF3665003440D6 /* SceneDelegate.swift */; };
-		DD9DB43625EF3665003440D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB43525EF3665003440D6 /* ViewController.swift */; };
+		DD9DB43625EF3665003440D6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB43525EF3665003440D6 /* MainVC.swift */; };
 		DD9DB43925EF3665003440D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DB43725EF3665003440D6 /* Main.storyboard */; };
 		DD9DB43C25EF3665003440D6 /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB43A25EF3665003440D6 /* DreamLister.xcdatamodeld */; };
 		DD9DB43E25EF3667003440D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9DB43D25EF3667003440D6 /* Assets.xcassets */; };
@@ -44,10 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD5000E425FC66E60070BAC3 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		DD9DB42E25EF3665003440D6 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9DB43125EF3665003440D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9DB43325EF3665003440D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD9DB43525EF3665003440D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD9DB43525EF3665003440D6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		DD9DB43825EF3665003440D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD9DB43B25EF3665003440D6 /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
 		DD9DB43D25EF3667003440D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD5000E325FC66C10070BAC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD5000E425FC66E60070BAC3 /* MaterialView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DD9DB42525EF3665003440D6 = {
 			isa = PBXGroup;
 			children = (
@@ -117,10 +127,11 @@
 		DD9DB43025EF3665003440D6 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				DD5000E325FC66C10070BAC3 /* View */,
 				DD9DB47A25EF3C1B003440D6 /* Model */,
 				DD9DB43125EF3665003440D6 /* AppDelegate.swift */,
 				DD9DB43325EF3665003440D6 /* SceneDelegate.swift */,
-				DD9DB43525EF3665003440D6 /* ViewController.swift */,
+				DD9DB43525EF3665003440D6 /* MainVC.swift */,
 				DD9DB43725EF3665003440D6 /* Main.storyboard */,
 				DD9DB43D25EF3667003440D6 /* Assets.xcassets */,
 				DD9DB43F25EF3668003440D6 /* LaunchScreen.storyboard */,
@@ -304,8 +315,9 @@
 				DD9DB47325EF3C05003440D6 /* Image+CoreDataClass.swift in Sources */,
 				DD9DB47425EF3C05003440D6 /* Image+CoreDataProperties.swift in Sources */,
 				DD9DB43C25EF3665003440D6 /* DreamLister.xcdatamodeld in Sources */,
+				DD5000E525FC66E60070BAC3 /* MaterialView.swift in Sources */,
 				DD9DB47225EF3C05003440D6 /* Store+CoreDataProperties.swift in Sources */,
-				DD9DB43625EF3665003440D6 /* ViewController.swift in Sources */,
+				DD9DB43625EF3665003440D6 /* MainVC.swift in Sources */,
 				DD9DB47525EF3C05003440D6 /* Item+CoreDataClass.swift in Sources */,
 				DD9DB47625EF3C05003440D6 /* Item+CoreDataProperties.swift in Sources */,
 				DD9DB47025EF3C05003440D6 /* ItemType+CoreDataProperties.swift in Sources */,
