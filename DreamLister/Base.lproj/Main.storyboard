@@ -33,7 +33,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="z1A-3M-mUM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="150" id="z1A-3M-mUM" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z1A-3M-mUM" id="T2Y-In-Hoq">
@@ -103,6 +103,12 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="details" destination="XKd-wJ-Hnu" id="Ldz-US-0dT"/>
+                                            <outlet property="price" destination="CIa-0i-F0A" id="rrd-7p-nTA"/>
+                                            <outlet property="thumbNail" destination="BnT-s5-age" id="q3C-x6-sjF"/>
+                                            <outlet property="title" destination="VAo-xl-X07" id="pWP-WK-atv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -124,6 +130,10 @@
                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="J7P-kH-e55" id="6PB-oG-Lbw"/>
+                        <outlet property="tableView" destination="6K2-Gz-MC9" id="fIS-50-15p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

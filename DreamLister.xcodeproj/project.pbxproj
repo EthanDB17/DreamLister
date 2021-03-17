@@ -25,6 +25,7 @@
 		DD9DB47425EF3C05003440D6 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB46C25EF3C05003440D6 /* Image+CoreDataProperties.swift */; };
 		DD9DB47525EF3C05003440D6 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB46D25EF3C05003440D6 /* Item+CoreDataClass.swift */; };
 		DD9DB47625EF3C05003440D6 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DB46E25EF3C05003440D6 /* Item+CoreDataProperties.swift */; };
+		DDCD8E1E26019B3D006CB12A /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD8E1D26019B3D006CB12A /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		DD9DB46C25EF3C05003440D6 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DD9DB46D25EF3C05003440D6 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DD9DB46E25EF3C05003440D6 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DDCD8E1D26019B3D006CB12A /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				DD5000E425FC66E60070BAC3 /* MaterialView.swift */,
+				DDCD8E1D26019B3D006CB12A /* ItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				DD9DB47425EF3C05003440D6 /* Image+CoreDataProperties.swift in Sources */,
 				DD9DB43C25EF3665003440D6 /* DreamLister.xcdatamodeld in Sources */,
 				DD5000E525FC66E60070BAC3 /* MaterialView.swift in Sources */,
+				DDCD8E1E26019B3D006CB12A /* ItemCell.swift in Sources */,
 				DD9DB47225EF3C05003440D6 /* Store+CoreDataProperties.swift in Sources */,
 				DD9DB43625EF3665003440D6 /* MainVC.swift in Sources */,
 				DD9DB47525EF3C05003440D6 /* Item+CoreDataClass.swift in Sources */,
