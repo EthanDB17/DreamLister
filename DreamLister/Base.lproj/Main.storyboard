@@ -245,6 +245,12 @@
                             <color key="tintColor" systemColor="systemRedColor"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="yIJ-Sv-aCR" id="cWP-gl-2i5"/>
+                        <outlet property="priceField" destination="teO-iQ-R49" id="Cjg-Zz-r0d"/>
+                        <outlet property="storePicker" destination="P6O-Yw-Mj3" id="lOH-Hi-6yu"/>
+                        <outlet property="titleField" destination="UZa-mM-Vit" id="ufb-Jq-Aiz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyd-Ab-6qp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -276,13 +282,13 @@
     </scenes>
     <designables>
         <designable name="UZa-mM-Vit">
-            <size key="intrinsicContentSize" width="46.5" height="18"/>
+            <size key="intrinsicContentSize" width="48.5" height="18.5"/>
         </designable>
         <designable name="teO-iQ-R49">
-            <size key="intrinsicContentSize" width="52" height="18"/>
+            <size key="intrinsicContentSize" width="53" height="18.5"/>
         </designable>
         <designable name="yIJ-Sv-aCR">
-            <size key="intrinsicContentSize" width="63" height="18"/>
+            <size key="intrinsicContentSize" width="64.5" height="18.5"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
