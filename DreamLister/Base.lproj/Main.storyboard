@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7hr-dL-cQd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7hr-dL-cQd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,8 +33,8 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="z1A-3M-mUM" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="150"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="z1A-3M-mUM" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="374" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z1A-3M-mUM" id="T2Y-In-Hoq">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
@@ -161,8 +161,8 @@
                                 </constraints>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZa-mM-Vit" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
-                                <rect key="frame" x="116" y="106" width="283" height="40"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <rect key="frame" x="116" y="106" width="282" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="CUv-TX-O1P"/>
                                 </constraints>
@@ -170,25 +170,25 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teO-iQ-R49" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
-                                <rect key="frame" x="116" y="156" width="283" height="40"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <rect key="frame" x="116" y="156" width="282" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="P0b-oe-Vq9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yIJ-Sv-aCR" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
-                                <rect key="frame" x="8" y="206" width="391" height="60"/>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <rect key="frame" x="8" y="206" width="390" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="CAl-9F-voa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCN-ib-lgl">
-                                <rect key="frame" x="157" y="336" width="93" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCN-ib-lgl">
+                                <rect key="frame" x="8" y="336" width="390" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="YiB-Q4-Qa6"/>
                                 </constraints>
@@ -197,10 +197,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6O-Yw-Mj3">
-                                <rect key="frame" x="8" y="383" width="391" height="216"/>
+                                <rect key="frame" x="8" y="383" width="390" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACH-wg-R0A">
-                                <rect key="frame" x="8" y="607" width="391" height="40"/>
+                                <rect key="frame" x="8" y="607" width="390" height="40"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="QYR-Cg-T54"/>
@@ -209,6 +209,9 @@
                                 <state key="normal" title="Save Item">
                                     <color key="titleColor" systemColor="systemGray4Color"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="k5Z-62-BAh" eventType="touchUpInside" id="D5l-ah-uFS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G6S-wk-x3a"/>
@@ -219,7 +222,7 @@
                             <constraint firstItem="UZa-mM-Vit" firstAttribute="leading" secondItem="BoL-vh-zgX" secondAttribute="trailing" constant="8" id="08U-MY-9Tg"/>
                             <constraint firstItem="teO-iQ-R49" firstAttribute="top" secondItem="UZa-mM-Vit" secondAttribute="bottom" constant="10" id="1JK-JM-iB8"/>
                             <constraint firstItem="BoL-vh-zgX" firstAttribute="leading" secondItem="yIJ-Sv-aCR" secondAttribute="leading" id="2IE-yq-75g"/>
-                            <constraint firstItem="UZa-mM-Vit" firstAttribute="trailing" secondItem="teO-iQ-R49" secondAttribute="trailing" id="2cP-1h-Sma"/>
+                            <constraint firstItem="teO-iQ-R49" firstAttribute="trailing" secondItem="UZa-mM-Vit" secondAttribute="trailing" id="37d-cs-BvT"/>
                             <constraint firstItem="BoL-vh-zgX" firstAttribute="bottom" secondItem="teO-iQ-R49" secondAttribute="bottom" id="3a9-ku-Q0F"/>
                             <constraint firstItem="BoL-vh-zgX" firstAttribute="top" secondItem="hTz-9e-xdU" secondAttribute="top" id="7V1-Gl-gbz"/>
                             <constraint firstItem="hTz-9e-xdU" firstAttribute="leading" secondItem="G6S-wk-x3a" secondAttribute="leading" constant="8" id="7xP-9I-fKW"/>
@@ -228,7 +231,9 @@
                             <constraint firstItem="P6O-Yw-Mj3" firstAttribute="leading" secondItem="ACH-wg-R0A" secondAttribute="leading" id="IF8-Yp-C5h"/>
                             <constraint firstItem="yIJ-Sv-aCR" firstAttribute="leading" secondItem="P6O-Yw-Mj3" secondAttribute="leading" id="J2I-k9-jAN"/>
                             <constraint firstItem="yIJ-Sv-aCR" firstAttribute="centerX" secondItem="xCN-ib-lgl" secondAttribute="centerX" id="MQY-UJ-yv6"/>
+                            <constraint firstItem="xCN-ib-lgl" firstAttribute="trailing" secondItem="yIJ-Sv-aCR" secondAttribute="trailing" id="Mct-DZ-iWT"/>
                             <constraint firstItem="ACH-wg-R0A" firstAttribute="top" secondItem="P6O-Yw-Mj3" secondAttribute="bottom" constant="8" id="PBo-Jw-f4e"/>
+                            <constraint firstItem="G6S-wk-x3a" firstAttribute="trailing" secondItem="UZa-mM-Vit" secondAttribute="trailing" constant="16" id="R8w-Oc-IH4"/>
                             <constraint firstItem="UZa-mM-Vit" firstAttribute="top" secondItem="G6S-wk-x3a" secondAttribute="top" constant="18" id="TaX-Ct-tGC"/>
                             <constraint firstItem="BoL-vh-zgX" firstAttribute="bottom" secondItem="hTz-9e-xdU" secondAttribute="bottom" id="Yij-N6-DqP"/>
                             <constraint firstItem="yIJ-Sv-aCR" firstAttribute="trailing" secondItem="P6O-Yw-Mj3" secondAttribute="trailing" id="Ytf-KW-CXg"/>
@@ -236,7 +241,7 @@
                             <constraint firstItem="hTz-9e-xdU" firstAttribute="top" secondItem="G6S-wk-x3a" secondAttribute="top" constant="8" id="fnH-Sk-K2f"/>
                             <constraint firstItem="ACH-wg-R0A" firstAttribute="trailing" secondItem="P6O-Yw-Mj3" secondAttribute="trailing" id="kSF-D6-fKf"/>
                             <constraint firstItem="yIJ-Sv-aCR" firstAttribute="top" secondItem="hTz-9e-xdU" secondAttribute="bottom" constant="10" id="kj5-n6-9Ob"/>
-                            <constraint firstItem="xCN-ib-lgl" firstAttribute="leading" secondItem="G6S-wk-x3a" secondAttribute="leading" constant="157" id="vDo-7N-CvB"/>
+                            <constraint firstItem="xCN-ib-lgl" firstAttribute="leading" secondItem="yIJ-Sv-aCR" secondAttribute="leading" id="xCH-ni-hE0"/>
                             <constraint firstItem="UZa-mM-Vit" firstAttribute="leading" secondItem="teO-iQ-R49" secondAttribute="leading" id="xOI-Ki-UUP"/>
                         </constraints>
                     </view>
@@ -282,13 +287,13 @@
     </scenes>
     <designables>
         <designable name="UZa-mM-Vit">
-            <size key="intrinsicContentSize" width="48.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="46.5" height="18"/>
         </designable>
         <designable name="teO-iQ-R49">
-            <size key="intrinsicContentSize" width="53" height="18.5"/>
+            <size key="intrinsicContentSize" width="52" height="18"/>
         </designable>
         <designable name="yIJ-Sv-aCR">
-            <size key="intrinsicContentSize" width="64.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="63" height="18"/>
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
@@ -299,6 +304,9 @@
         <image name="tesla" width="800" height="489"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
