@@ -8,15 +8,17 @@
 import UIKit
 import CoreData
 
-class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var storePicker: UIPickerView!
     @IBOutlet weak var titleField: CustomTextField!
     @IBOutlet weak var priceField: CustomTextField!
     @IBOutlet weak var detailsField: CustomTextField!
+    @IBOutlet weak var thumbImg: UIImageView!
     
     var stores = [Store]()
     var itemToEdit: Item?
+    var imagePicker: UIImagePickerController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,9 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         storePicker.dataSource = self
         storePicker.delegate = self
+        
+        imagePicker = UIImagePickerController()
+        imagePicker?.delegate = self
         
 //        let store = Store(context: context)
 //        store.name = "Best Buy"
@@ -87,11 +92,16 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         
         var item: Item!
         
+        let picture = Image(context: context)
+        picture.image = thumbImg.image
+        
         if itemToEdit == nil {
             item = Item(context: context)
         } else {
             item = itemToEdit
         }
+        
+        item.toImage = picture
         
         if let title = titleField.text {
             item.title = title
@@ -118,6 +128,8 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             priceField.text = String(item.price)
             detailsField.text = item.details
             
+            thumbImg.image = item.toImage?.image as? UIImage
+            
             if let store = item.toStore {
                 for s in 0..<stores.count {
                     if stores[s].name == store.name {
@@ -127,5 +139,27 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
                 }
             }
         }
+    }
+    
+    @IBAction func deletePressed(_ sender: Any) {
+        if itemToEdit != nil {
+            context.delete(itemToEdit!)
+            ad.saveContext()
+        }
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func addImage(_ sender: Any) {
+        guard let ip = imagePicker else { return }
+        present(ip, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            thumbImg.image = image
+        }
+        
+        imagePicker?.dismiss(animated: true, completion: nil)
     }
 }
